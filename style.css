@@ -91,6 +91,8 @@ input[type="text"]
 
 #calc-container {
   display: grid;
+  min-width: 540pt;
+  max-width: 540pt;
   grid-template-columns: 250pt 250pt;
   grid-template-rows: repeat(2, 100pt) 600pt;
   grid-template-areas: 
