@@ -3,3 +3,98 @@ body {
   width: 50%;
   height: 75%;
 }
+
+/* calculator container components*/
+
+#result {
+  grid-area: result;
+}
+
+#all-the-buttons {
+  grid-area: all-the-buttons;
+}
+
+#calc-container {
+  display: grid;
+  grid-template-columns: 250pt 250pt;
+  grid-template-rows: repeat(2, 100pt) 600pt;
+  grid-template-areas: 
+    "result result"
+    "result result"
+    "all-the-buttons all-the-buttons";
+}
+
+/*all-the-buttons container components*/
+
+#first-label {
+  grid-area: first-label;
+}
+
+#second-label {
+  grid-area: second-label;
+}
+
+#first-Number {
+  grid-area: first-number;
+}
+
+#second-Number {
+  grid-area: second-number;
+}
+
+#solve {
+  grid-area: solve;
+}
+
+#clear {
+  grid-area: clear;
+}
+
+#math-button-container {
+  grid-area: math-button-container;
+}
+
+#all-the-buttons {
+  display: grid;
+  grid-template-columns: 250pt 250pt;
+  grid-template-rows: 50pt 50pt repeat(4, 100pt);
+  grid-template-areas:
+  "first-label second-label"
+  "first-number second-number"
+  "math-button-container math-button-container"
+  "math-button-container math-button-container"
+  "math-button-container math-button-container"
+  "clear solve";
+}
+
+/* math-button-container components*/
+
+#addition {
+  grid-area: addition;
+}
+
+#subtraction {
+  grid-area: subtraction;
+}
+
+#multiplication {
+  grid-area: multiplication;
+}
+
+#division {
+  grid-area: division;
+}
+
+#modulus {
+  grid-area: modulus;
+}
+
+#math-button-container {
+  display: grid;
+  grid-template-columns: 250pt 250pt;
+  grid-template-rows: repeat(3, 100pt);
+  grid-template-areas: 
+    "addition subtraction"
+    "multiplication division"
+    "modulus modulus";
+}
