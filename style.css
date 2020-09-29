@@ -9,6 +9,7 @@ body {
   margin-top: ;
   font-size: 40pt;
   color: rgb(66,74,38);
+  font-family: 'Press Start 2P', cursive;
 }
 
 #first-label, #second-label {
@@ -16,6 +17,7 @@ body {
   justify-self: center;
   color: rgb(95,89,119);
   font-size: 20pt;
+  font-family: 'Varela Round', sans-serif;
 }
 
 #first-Number, #second-Number {
@@ -25,17 +27,20 @@ body {
   outline: none;
   width: 200pt;
   justify-self: center;
-  font-size: 30pt;
+  font-size: 25pt;
   box-shadow: inset 0 0 10px #000000;
+  font-family: 'Press Start 2P', cursive;
   
 }
 
 #first-Number::placeholder {
-  font-size: 18pt;
+  font-size: 8pt;
+  text-align: center;
 }
 
 #second-Number::placeholder {
-  font-size: 18pt;
+  font-size: 8pt;
+  text-align: center;
 }
 
 input[type="text"]
