@@ -7,29 +7,31 @@ body {
 #result {
   place-self: center;
   font-size: 40pt;
-  color: rgb(66,74,38);
-  font-family: 'Press Start 2P', cursive;
+  color: rgb(66, 74, 38);
+  font-family: "Press Start 2P", cursive;
 }
 
-#first-label, #second-label {
+#first-label,
+#second-label {
   align-self: end;
   justify-self: center;
-  color: rgb(95,89,119);
+  color: rgb(95, 89, 119);
   font-size: 20pt;
-  font-family: 'Varela Round', sans-serif;
+  font-family: "Varela Round", sans-serif;
 }
 
-#first-Number, #second-Number {
-  background-color: rgb(156,160,76);
-  color: rgb(66,74,38);
+#first-Number,
+#second-Number {
+  background-color: rgb(156, 160, 76);
+  color: rgb(66, 74, 38);
   border-radius: 25pt;
   outline: none;
   width: 200pt;
   justify-self: center;
   font-size: 25pt;
   box-shadow: inset 0 0 10px #000000;
-  font-family: 'Press Start 2P', cursive;
-  
+  font-family: "Press Start 2P", cursive;
+  overflow: hidden;
 }
 
 #first-Number::placeholder {
@@ -42,43 +44,43 @@ body {
   text-align: center;
 }
 
-input[type="text"]
-{
-    font-size:50pt;
+input[type="text"] {
+  font-size: 50pt;
 }
 
-#clear, #solve {
+#clear,
+#solve {
   border-radius: 25pt;
   align-self: end;
   justify-self: center;
   height: 50pt;
   width: 150pt;
-  background-color: rgb(171,159,162);
+  background-color: rgb(171, 159, 162);
   font-size: 20pt;
-  box-shadow: -3pt 5pt rgb(106,100,96);
+  box-shadow: -3pt 5pt rgb(106, 100, 96);
 }
 
 .math-button {
   border-radius: 50%;
   padding: 0%;
   width: 100pt;
-  background: rgb(175,79,119);
+  background: rgb(175, 79, 119);
   justify-self: center;
-  color: rgb(236,231,225);
+  color: rgb(236, 231, 225);
   font-size: 20pt;
-  box-shadow: -3pt 5pt rgb(122,59,78);
+  box-shadow: -3pt 5pt rgb(122, 59, 78);
 }
 
 /* calculator container components*/
 
 #result-wrapper {
   grid-area: result-wrapper;
-  border-top: 25pt solid rgb(133,131,134);
-  border-bottom: 25pt solid rgb(133,131,134);
-  border-right: 40pt solid rgb(133,131,134);
-  border-left: 40pt solid rgb(133,131,134);
+  border-top: 25pt solid rgb(133, 131, 134);
+  border-bottom: 25pt solid rgb(133, 131, 134);
+  border-right: 40pt solid rgb(133, 131, 134);
+  border-left: 40pt solid rgb(133, 131, 134);
   border-radius: 15pt;
-  background-color: rgb(156,160,76);
+  background-color: rgb(156, 160, 76);
   margin-top: 25pt;
   display: grid;
   box-shadow: inset 0 0 10px #000000;
@@ -94,14 +96,14 @@ input[type="text"]
   max-width: 540pt;
   grid-template-columns: 250pt 250pt;
   grid-template-rows: repeat(2, 100pt) 600pt;
-  grid-template-areas: 
+  grid-template-areas:
     "result-wrapper result-wrapper"
     "result-wrapper result-wrapper"
     "all-the-buttons all-the-buttons";
-  background-color: rgb(237,232,226);
+  background-color: rgb(237, 232, 226);
   border-radius: 15pt;
   justify-content: center;
-  box-shadow: -3pt 5pt rgb(222,218,215);
+  box-shadow: -3pt 5pt rgb(222, 218, 215);
 }
 
 /*all-the-buttons container components*/
@@ -139,12 +141,12 @@ input[type="text"]
   grid-template-columns: 250pt 250pt;
   grid-template-rows: 50pt 50pt repeat(4, 100pt);
   grid-template-areas:
-  "first-label second-label"
-  "first-number second-number"
-  "math-button-container math-button-container"
-  "math-button-container math-button-container"
-  "math-button-container math-button-container"
-  "clear solve";
+    "first-label second-label"
+    "first-number second-number"
+    "math-button-container math-button-container"
+    "math-button-container math-button-container"
+    "math-button-container math-button-container"
+    "clear solve";
 }
 
 /* math-button-container components*/
@@ -175,12 +177,12 @@ input[type="text"]
   display: grid;
   grid-template-columns: 250pt 250pt;
   grid-template-rows: repeat(3, 100pt);
-  grid-template-areas: 
+  grid-template-areas:
     "addition subtraction"
     "multiplication division"
     "modulus modulus";
-    grid-gap: 20pt;
-    align-self: center;
-    justify-self: center;
-    margin-top: 50pt;
+  grid-gap: 20pt;
+  align-self: center;
+  justify-self: center;
+  margin-top: 50pt;
 }
